@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/pvova21/ajs3/issues"
   },
-  "homepage": "https://github.com/pvova21/ajs3#readme"
+  "homepage": "https://github.com/pvova21/ajs3#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
